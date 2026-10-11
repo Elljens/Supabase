@@ -15,6 +15,9 @@ registerForm.addEventListener("submit", async function (e) {
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
+      options: {
+        emailRedirectTo: "https://elljens.github.io/Supabase/index.html",
+      },
     });
 
     if (error) {

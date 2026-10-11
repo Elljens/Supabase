@@ -35,7 +35,7 @@ npm install -D tailwindcss@^4 @tailwindcss/cli
 - During development, run
 
 ```bash
-npm runn dev
+npm run dev
 ```
 
 -When ready for production, run

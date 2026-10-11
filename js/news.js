@@ -57,7 +57,7 @@ async function loadNews() {
       body.classList.add("p-3");
 
       const creator = document.createElement("p");
-      creator.textContent = "Written by: " + post.submitted_by;
+      creator.textContent = "Writer id: " + post.submitted_by;
       creator.classList.add("text-gray-500", "text-xs", "p-3", "mt-auto");
 
       newsElement.appendChild(title);
