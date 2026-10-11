@@ -77,9 +77,11 @@ createBtn.addEventListener("click", () => {
   createSection.classList.toggle("hidden");
 
   if (createSection.classList.contains("hidden")) {
-    createBtn.textContent = "Create a new post";
+    createBtn.innerHTML =
+      '<i class="fa-solid fa-square-plus"></i> Create a new post';
   } else {
-    createBtn.textContent = "Close post form";
+    createBtn.innerHTML =
+      '<i class="fa-solid fa-square-xmark"></i> Close post form';
   }
 });
 
